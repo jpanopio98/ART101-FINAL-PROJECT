@@ -50,10 +50,11 @@ function draw() {
       break;
   }
 
-  // lark - you should move this inside level 1 function.
-  // you might want to place it before the background gets drawn black so that
-  // you only see it when it is *not* dark
-
+// lark - you should move this inside level 1 function.
+// you might want to place it before the background gets drawn black so that
+// you only see it when it is *not* dark
+  text(timer, width / 2, height / 2);
+  fill(75, 90, 90);
 
 }
 
@@ -191,8 +192,6 @@ function time() {
     darkness = true;
   }
 } // lark added bracket here
-
-
 
 
 function questions() {
