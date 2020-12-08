@@ -53,8 +53,7 @@ function draw() {
 // lark - you should move this inside level 1 function.
 // you might want to place it before the background gets drawn black so that
 // you only see it when it is *not* dark
-  text(timer, width / 2, height / 2);
-  fill(75, 90, 90);
+
 
 }
 
@@ -97,6 +96,7 @@ function level1() {
 
   text(`Health: ${health} `);
   //need to move player health and timer
+
   background(255); // lark changed - should be white by default
   text('SANITY:' + health, 0, height - 100, width / 2);
   text(timer, width / 2, height / 2);
@@ -163,8 +163,11 @@ function level1() {
     background(0); // lark changed from 255 - it should be black when dark
     // time(); //counts down when dark << Lark - Oh! Realized this should actually count down when it's light...
     // if player collects light orb make lightorbs stop spawning
+
   } else if (darkness === false) {
     time(); // timer counts down when it is light only
+    text(timer, width / 2, height / 2);
+    fill(75, 90, 90);
   }
 
 
@@ -214,16 +217,6 @@ function questions() {
   text('Stay Positive', 550, 350);
 }
 
-// function question2(){
-//   background(255, 50, 80);
-//   textSize(50);
-//   stroke(255);
-//
-//   text('Hope for the best', 500, 500);
-//   textSize(50);
-//     fill(255);
-//     text('SANITY:' + health, 0, height - 100, width / 2);
-// }
 
 function youWin() {
   background(255, 50, 80);
