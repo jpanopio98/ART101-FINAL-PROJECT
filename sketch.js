@@ -50,9 +50,9 @@ function draw() {
       break;
   }
 
-// lark - you should move this inside level 1 function.
-// you might want to place it before the background gets drawn black so that
-// you only see it when it is *not* dark
+  // lark - you should move this inside level 1 function.
+  // you might want to place it before the background gets drawn black so that
+  // you only see it when it is *not* dark
 
 
 }

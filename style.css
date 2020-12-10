@@ -1,10 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
-background-color: red;
+  background-color: #232020;
+  color: white;
+  text-align: center;
+  font: 300 40px 'Lato', sans-serif;
 }
+
 canvas {
   display: block;
-  margin:50px auto 50px auto;
-
+  margin: 50px auto 50px auto;
 }
